@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { BookingProvider } from './context/BookingContext';
-import { ThemeProvider } from './context/ThemeContext';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
-import LandingPage from './pages/LandingPage';
-import BookingPage from './pages/BookingPage';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BookingProvider } from "./context/BookingContext";
+import { ThemeProvider } from "./context/ThemeContext";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import LandingPage from "./pages/LandingPage";
+import BookingPage from "./pages/BookingPage";
 
 function App() {
   return (

@@ -24,6 +24,14 @@ export default function LandingPage() {
                     size="lg"
                     variant="primary"
                     className="bg-white text-blue-600 hover:bg-blue-50 flex items-center"
+                    onClick={() => {
+                      const now = new Date();
+                      const subject = `Booking for ${now.toLocaleString()}`;
+                      const body = `I would like to book an appointment for ${now.toLocaleString()}.`;
+                      window.location.href = `mailto:yourcalendar@example.com?subject=${encodeURIComponent(
+                        subject
+                      )}&body=${encodeURIComponent(body)}`;
+                    }}
                   >
                     Book Now <ArrowRight size={16} className="sm:ml-2" />
                   </Button>
